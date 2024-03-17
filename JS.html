@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 1</title>
+    <style>
+    body{
+        background-image: url(https://th.bing.com/th/id/OIP.qCJ2RvNldwIrg9mUr1HpvQHaE8?rs=1&pid=ImgDetMain);
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+     #maindiv{
+        position: absolute;
+       background-image: url(https://wallpaperaccess.com/full/4686230.jpg);
+        border: 2px solid rebeccapurple;
+        width: 400px;
+        height: 250px;
+        padding: 10px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        border-radius: 5px;
+        opacity: 70%;
+        color: azure;
+    }
+     h1{
+        display: inline-block;
+        margin-left: 10%;
+     }
+     button{
+        position: relative;
+        background-color: aqua;
+        border: 2px solid red;
+        border-radius: 5px;
+        left: 30%;
+        opacity: 70%;
+     }  
+     #div2{
+        display: inline-block;
+     } 
+     #div3{
+        display: inline-block;
+        margin-left: 20%;
+     } 
+     #btn2{
+        position: relative;
+        left: 40%;
+        top: 20%;
+     }
+    </style>
+</head>
+<body>
+<section id="maindiv">
+    <div id="div1">
+        <h1 id="head">Heading</h1>
+        <button onclick="f1()" id="btn1">change</button>
+    </div>
+    <hr>
+    <div>
+        <div id="div2">
+            <p id="para1">This is my project</p>
+            <button onclick="f2()">change</button>
+        </div>
+        <div id="div3">
+            <p id="para2">Welcome to my project</p>
+            <button onclick="f3()">change</button>
+        </div>
+    </div>
+    <button onclick="f4()" id="btn2">submit</button>
+</section>
+</body>
+<script>
+function f1(){
+    document.getElementById("head").innerHTML=("This is Heading");
+}
+function f2(){
+    document.getElementById("para1").innerHTML=("Project Completed");
+}
+function f3(){
+    document.getElementById("para2").innerHTML=("Thank you");
+}
+function f4(){
+   alert("your project submitted")
+}
+</script>
+</html>
